@@ -64,7 +64,6 @@ class Order:
             values = (id_number,)
             cursor.execute(sql, values)
 
-            data = []
             for record in cursor.fetchall():
                 total = record
 
